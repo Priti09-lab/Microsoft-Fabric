@@ -14,9 +14,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Show branch name
-      run: echo "Running on branch: ${{ github.ref_name }}"
-
     - name: Install Terraform
       run: |
         wget https://releases.hashicorp.com/terraform/1.5.7/terraform_1.5.7_linux_amd64.zip
