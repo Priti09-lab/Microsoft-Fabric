@@ -1,20 +1,29 @@
-
-variable "workspace_display_name" {
-  description = "The display name of the Fabric workspace"
+variable "tenant_id" {
   type        = string
+  description = "Azure Entra ID Tenant ID"
 }
 
-variable "location" {
-  description = "Azure region for the workspace"
+variable "subscription_id" {
   type        = string
+  description = "Azure Subscription ID"
 }
 
 variable "capacity_id" {
-  description = "The ID of the Fabric capacity to assign the workspace to"
   type        = string
+  description = "Fabric Capacity ID"
+}
+
+variable "workspace_display_name" {
+  type        = string
+  description = "Display name for the Fabric workspace"
 }
 
 variable "workspace_members" {
-  description = "List of members to assign to the workspace"
   type        = list(string)
+  description = "List of user principal names to add to the workspace"
+}
+
+variable "location" {
+  type        = string
+  description = "Azure region"
 }
