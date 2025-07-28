@@ -1,6 +1,2 @@
-tenant_id             = "your-tenant-id"
-subscription_id       = "your-subscription-id"
-capacity_id           = "your-fabric-capacity-id"
+capacity_id           = "579DAABE-A896-4873-89F9-67DA2F63808D"
 workspace_display_name = "MyFabricWorkspace"
-workspace_members     = ["user1@domain.com", "user2@domain.com"]
-location              = "East US"
